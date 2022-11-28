@@ -1,0 +1,343 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #454141;
+}
+/* Tạo menu navigation */
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #181818;
+    margin: 0px auto;
+    z-index: 3;
+
+}
+
+ul.root>li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+ul.root>li>a {
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    color: darkgoldenrod;
+    line-height: 50px;
+    display: block;
+    text-transform: uppercase;
+    margin: 0 10px 0 10px;
+}
+
+ul.root>li>a:hover {
+    background: rgb(193, 58, 58);
+    color: #fff;
+    transition: ease-in 0.35s;
+    -moz-transition: ease-in 0.35s;
+    -webkit-transition: ease-in 0.35s;
+}
+
+ul.brand, ul.video {
+    column-count: 2;
+    width: 350px;
+    background: #181818;
+    min-height: 200px;
+    display: none;
+    position: absolute;
+}
+
+ul.brand li, ul.video li {
+    list-style: none;
+}
+
+ul.brand li a, ul.video li a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid darkgoldenrod;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+ul.brand li a:hover , ul.video li a:hover{
+    background: rgb(193, 58, 58);
+    color: #fff;
+    transition: ease-in 0.35s;
+    -moz-transition: ease-in 0.35s;
+    -webkit-transition: ease-in 0.35s;
+}
+
+ul.root>li:hover ul.brand, ul.root>li:hover ul.video {
+    display: block;
+}
+
+#nav .nav-down-icon {
+    font-size: 12px;
+}
+/* Chỉnh logo */
+#logo img
+{
+    height: 50px;
+    width: 50px;
+    position:fixed;
+    z-index: 3;
+    left: 1420px;
+}
+/* Chủ đề */
+.topic {
+    border-left: 2px solid darkgoldenrod;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    color: #ffffff;
+    text-align: left;
+    z-index: 2;
+    left: 70px;
+    text-shadow: 2px 2px 10px black;
+    text-shadow: black 2px 2px 2px;
+
+}
+
+strong {
+    color: darkgoldenrod;
+    font-size: 80px
+}
+/* Tạo slider ảnh */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    z-index: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: darkgoldenrod;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/* Tạo một đường */
+#line {
+    margin-top: 120px;
+    width: 100%;
+    height: 5px;
+    background-color: darkgoldenrod;
+}
+/* Overview */
+#overview h1 {
+    text-align: center;
+    text-shadow: black 2px 2px 2px;
+    color:darkgoldenrod;
+}
+#p1{
+    column-count: 2;
+}
+#p1 a{
+    color:darkgoldenrod;
+}
+#p1 h2 {
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow: black 2px 2px 2px;
+}
+#overview p  {
+    color:#ffffff;
+    text-indent: 50px;
+    margin-left: 50px;
+    margin-right:20px;
+}
+#overview iframe {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#p2 #caption {
+    text-align: center;
+}
+#p2 h3 {
+    color:darkgoldenrod;
+    text-indent: 60px;
+}
+/* Feedback */
+#feedback {
+    position: fixed;
+    top: 100px;
+    left: -362px;
+    background:#181818;
+}
+
+#feedback form {
+    float: left;
+    border: 1px solid darkgoldenrod;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#feedback form label {
+    display: block;
+    float: left;
+    text-align: right;
+    margin-right: 20px;
+    width: 70px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    font-size: 14px;
+}
+
+#feedback a {
+    background: url("/img/feedback-buttons.png") no-repeat center left transparent;
+    display: block;
+    width: 40px;
+    height: 175px;
+    float: left;
+    text-indent: -9999em;
+    position: absolute;
+    top: 120px;
+    right: -40px;
+}
+
+#feedback a:hover {
+    background-position: center right;
+}
+
+#feedback form .btn {
+    float: right;
+    background: url("/img/send.png") no-repeat 0px 0px transparent;
+    text-indent: -9999em;
+    width: 80px;
+    height: 28px;
+    border: none;
+
+}
+
+#feedback form textarea {
+    width: 250px;
+    height: 140px;
+    border: 1px solid darkgoldenrod;
+}
+
+#feedback form input[type="text"] {
+    width: 250px;
+    height: 30px;
+    border: 1px solid darkgoldenrod;
+}
+
+#feedback h2 {
+    text-align: center;
+    color: chocolate;
+    text-shadow:0.2px 0.3px 0.3px #000;
+    font-size: 22px;
+    text-shadow: black 2px 2px 2px;
+}
+/* Video */
+#video h1 {
+    color: darkgoldenrod;
+    text-align: center;
+    text-shadow: black 2px 2px 2px;
+}
+#video h2 {
+    text-indent: 50px;
+    text-align: left;
+    color: chocolate;
+}
+#video {
+    text-align: center;
+}
+#footer_1   
+{   text-align: center;
+    height:20px;
+    width: 100%;
+    background: chocolate;
+}
+/* my contact */
+#contact h1 {
+    text-indent: 50px;
+    color:darkgoldenrod;
+    margin-bottom: 50px;
+}
+#contact h2 {
+    color:blue;
+}
+#contact i{
+    color:#FFFFFF;
+}
+#contact h3 {
+    color:chocolate;
+    text-indent: 50px;
+}
+#contact p {
+    color:darkgoldenrod;
+}
+#contact a {
+    color:darkgoldenrod;
+}
+#footer_1 p{
+   padding:10px;
+}
+#footer_2 {
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    background:darkgoldenrod;
+}
+
+#footer_2 p {
+    padding: 8px;
+}
+footer {
+    font-size:10px;
+}
+

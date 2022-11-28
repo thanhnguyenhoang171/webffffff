@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+#line, #line1, #line2 {
+    width: 100%;
+    height: 2px;
+    background: darkgoldenrod;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+        background-color: #454141;
+}
+#header #logo {
+    position: fixed;
+    z-index: 4;
+    left:700px;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #181818;
+    margin: 0px auto;
+    z-index: 3;
+
+}
+#nav img.mer{
+    width: 80px;
+    height: 40px;
+    position: relative;
+    left: 120px;
+}
+#nav img.may {
+    left: 120px;
+}
+#nav img.fe {
+    left:40px;
+}
+#nav img {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    left:170px;
+}
+
+ul.root>li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+ul.root>li>a {
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    color: darkgoldenrod;
+    line-height: 50px;
+    display: block;
+    text-transform: uppercase;
+    margin: 0 10px 0 10px;
+}
+
+ul.root>li>a:hover {
+    background: rgb(193, 58, 58);
+    color: #fff;
+    transition: ease-in 0.35s;
+    -moz-transition: ease-in 0.35s;
+    -webkit-transition: ease-in 0.35s;
+}
+
+ul.brand
+{
+    
+    width: 300px;
+    background: #181818;
+    min-height: 100px;
+    display: none;
+    position: absolute;
+}
+
+ul.brand li
+ {
+    list-style: none;
+}
+
+ul.brand li a
+ {
+    color: darkgoldenrod;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid darkgoldenrod;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+ul.brand li a:hover
+ {
+    background: rgb(193, 58, 58);
+    color: #fff;
+    transition: ease-in 0.35s;
+    -moz-transition: ease-in 0.35s;
+    -webkit-transition: ease-in 0.35s;
+}
+
+ul.root>li:hover ul.brand
+{
+    display: block;
+}
+#nav li ul {
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+#nav li:hover>ul {
+    display: block;
+}
+#nav>ul li>ul li>ul {
+    width: 50px;
+    background: #181818;
+    margin-left: 352px;
+    margin-top: -50px;
+}
+#nav .nav-down-icon, #nav .ti-angle-right {
+    font-size: 12px;
+}
+/* Chủ đề */
+ .topic {
+    border-left: 2px solid darkgoldenrod;
+    font-size: 30px;
+    position: absolute;
+    top: 100px;
+    color: #ffffff;
+    text-align: left;
+    z-index: 2;
+    left: 70px;
+    text-shadow: 2px 2px 10px black;
+
+}
+
+
+/* Tạo slider ảnh */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    z-index: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: darkgoldenrod;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/* content */
+table td, th{
+    border-right:darkgoldenrod solid 2px;
+    padding-left:50px;
+    padding-right:20px;
+}
+table th:last-child,
+td:last-child {
+    border-right:none;
+}
+table.ts {
+    margin-top:50px;
+    width: 900px;
+    float: right;
+    color: #ffffff;
+
+}
+
+table.ts th {
+    text-align: left;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+table.ts td {
+    text-align: right;
+    border-bottom: 2px solid darkgoldenrod;
+}
+#dongco h2{
+    position: relative;
+    right:400px;
+}
+table.en 
+{
+    margin-top: 50px;
+     width: 700px;
+    float: left;
+    color: #ffffff;
+}
+table.en th {
+    text-align: left;
+    border-bottom: 2px solid darkgoldenrod;
+}
+table.en td {
+    text-align: right;
+    border-bottom: 2px solid darkgoldenrod;
+}
+#hieusuat {
+float: left;
+margin-left: 10px;
+}
+table.ef {
+    margin-top: 50px;
+    width: 700px;
+    
+    color: #ffffff;
+}
+
+table.ef th {
+    text-align: left;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+table.ef td {
+    text-align: right;
+    border-bottom: 2px solid darkgoldenrod;
+}
+#content {
+    color:#ffffff;
+}
+#content p{
+    text-indent: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#content h1 {
+    color:darkgoldenrod;
+    text-align: center;
+}
+#content h2 {
+    text-align: center;
+    color:chocolate;
+}
+#truyendong {
+    margin-left: 10px;
+    float: left;
+    margin-top: 50px;
+}
+
+table.tr {
+    width: 700px;
+    color: #ffffff;
+}
+
+table.tr th {
+    text-align: left;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+table.tr td {
+    text-align: right;
+    border-bottom: 2px solid darkgoldenrod;
+}
+#than {
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    bottom:130px;
+}
+
+table.tr {
+    width: 700px;
+    color: #ffffff;
+}
+
+table.tr th {
+    text-align: left;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+table.tr td {
+    text-align: right;
+    border-bottom: 2px solid darkgoldenrod;
+}
+#gallery img{
+  
+   width: 100%;
+   height:613px;
+
+}
+#gallery h1 {
+    color: darkgoldenrod;
+    text-shadow: 2px 2px 10px black;
+}
+#gallery h2 {
+    padding:20px;
+    background: #3c2222;
+    color: chocolate;
+    text-shadow: 2px 2px 10px black;
+    text-indent: 30px;
+}
+/* footer */
+#footer_2 {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background: darkgoldenrod;
+}
+
+#footer_2 p {
+    padding: 10px;
+}
